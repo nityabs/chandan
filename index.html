@@ -18,7 +18,9 @@
         <div class="row py-4">
           <div class="col-md-3 col-sm-12 logo-container">
             <div class="logo-wrapper position-relative">
-              <img class="logo img-fluid" src="https://c.animaapp.com/mdoi84bbM5b8Gm/img/image-7.png" alt="Logo" />
+              <a class="navbar-brand" href="#">
+                <img src="/public/navbrand.png" alt="Logo" class="logo img-fluid" />
+              </a>
               <p class="tagline">WRITER | POET | DIGITALGEEK</p>
             </div>
           </div>
@@ -63,7 +65,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 order-lg-2 order-md-2 order-1 text-center">
-            <img class="hero-image img-fluid" src="https://c.animaapp.com/mdoi84bbM5b8Gm/img/rectangle-12442.png" alt="Chandan Sharma" />
+            <img class="hero-image img-fluid" src="/public/mainheadshot.png" alt="Chandan Sharma" />
           </div>
           <div class="col-lg-4 col-md-12 col-sm-12 order-lg-3 order-md-3 order-3">
             <div class="hero-description">
@@ -100,13 +102,38 @@
           <div class="col-12">
             <h3 class="text-center mb-4">COMPANY I WORKED WITH</h3>
             <div class="company-logos d-flex flex-wrap justify-content-center align-items-center">
-              <img class="company-logo mx-3 my-2" src="https://c.animaapp.com/mdoi84bbM5b8Gm/img/rectangle-12480.png" alt="Company" />
-              <img class="company-logo mx-3 my-2" src="https://c.animaapp.com/mdoi84bbM5b8Gm/img/rectangle-12481.png" alt="Company" />
-              <img class="company-logo mx-3 my-2" src="https://c.animaapp.com/mdoi84bbM5b8Gm/img/rectangle-12482.png" alt="Company" />
-              <img class="company-logo mx-3 my-2" src="https://c.animaapp.com/mdoi84bbM5b8Gm/img/rectangle-12483.png" alt="Company" />
-              <img class="company-logo mx-3 my-2" src="https://c.animaapp.com/mdoi84bbM5b8Gm/img/rectangle-12484.png" alt="Company" />
-              <img class="company-logo mx-3 my-2" src="https://c.animaapp.com/mdoi84bbM5b8Gm/img/rectangle-12485.png" alt="Company" />
-              <img class="company-logo mx-3 my-2" src="https://c.animaapp.com/mdoi84bbM5b8Gm/img/rectangle-12486.png" alt="Company" />
+                <div class="company-slider-wrapper position-relative w-100 overflow-hidden" style="height:100px;">
+                  <div class="company-slider d-flex align-items-center" style="animation: company-slide 20s linear infinite;">
+                    <img class="company-logo mx-3 my-2" src="/public/company1.png" alt="Company 1" />
+                    <img class="company-logo mx-3 my-2" src="/public/company2.png" alt="Company 2" />
+                    <img class="company-logo mx-3 my-2" src="/public/company3.png" alt="Company 3" />
+                    <img class="company-logo mx-3 my-2" src="/public/company4.png" alt="Company 4" />
+                    <img class="company-logo mx-3 my-2" src="/public/company5.png" alt="Company 5" />
+                    <img class="company-logo mx-3 my-2" src="/public/company6.png" alt="Company 6" />
+                    <img class="company-logo mx-3 my-2" src="/public/company7.png" alt="Company 7" />
+                    <!-- Duplicate logos for seamless infinite effect -->
+                    <img class="company-logo mx-3 my-2" src="/public/company1.png" alt="Company 1" />
+                    <img class="company-logo mx-3 my-2" src="/public/company2.png" alt="Company 2" />
+                    <img class="company-logo mx-3 my-2" src="/public/company3.png" alt="Company 3" />
+                    <img class="company-logo mx-3 my-2" src="/public/company4.png" alt="Company 4" />
+                    <img class="company-logo mx-3 my-2" src="/public/company5.png" alt="Company 5" />
+                    <img class="company-logo mx-3 my-2" src="/public/company6.png" alt="Company 6" />
+                    <img class="company-logo mx-3 my-2" src="/public/company7.png" alt="Company 7" />
+                  </div>
+                </div>
+                <style>
+                @keyframes company-slide {
+                  0% { transform: translateX(0); }
+                  100% { transform: translateX(-50%); }
+                }
+                .company-slider {
+                  width: 200%;
+                }
+                .company-logo {
+                  height: 60px;
+                  object-fit: contain;
+                }
+                </style>
             </div>
           </div>
         </div>
